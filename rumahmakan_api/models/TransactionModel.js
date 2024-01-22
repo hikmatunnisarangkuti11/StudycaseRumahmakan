@@ -25,6 +25,9 @@ const Transaction = db.define(
         allowNull: false, // Tidak boleh kosong (NOT NULL)
         unique: true, // Harus unik di dalam tabel
       },
+      totalHarga: {
+        type: DataTypes.INTEGER, // Tipe data untuk kolom quantity
+      },
     },
     {
       freezeTableName: true, // Menyatakan bahwa nama tabel harus sesuai dengan nama yang didefinisikan (freezeTableName)
